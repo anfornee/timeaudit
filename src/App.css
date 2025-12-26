@@ -5,38 +5,61 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label.ant-form-item-required {
+  color: #FFF;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.activities-lists-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
 }
 
-.card {
-  padding: 2em;
+.activity-list,
+.activity-hours-tally-list {
+  list-style-type: none;
+  padding: 0;
+  width: 90%;
+  min-width: 200px;
+  max-width: 400px;
+  overflow: hidden;
 }
 
-.read-the-docs {
-  color: #888;
+.activity-hours-tally-list-item {
+  border: 2px solid gray;
+  border-top: none;
+  padding: 8px;
+}
+
+.activity-hours-tally-list-item:first-child {
+  border-top: 2px solid gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.activity-hours-tally-list-item:last-child {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: none;
+}
+
+.activity-list {
+  border: 2px solid gray;
+  border-radius: 10px;
+  height: 800px;
+}
+
+.activity-list-item {
+  border-bottom: 2px solid gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
