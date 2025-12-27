@@ -119,6 +119,7 @@ export default function App() {
 
   return (
     <main>
+      <h1>Life...</h1>
       <div className="form-container">
         <Form
           name="basic"
